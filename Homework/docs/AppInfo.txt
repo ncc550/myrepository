@@ -1,6 +1,6 @@
 
 Note this is a fast prototype:
-	 there are no return functions so you must go back and manually do a page refresh to get any uopdated valuse
+	 there are no (page) return functions so you must go back and manually do a page refresh to get any updated values
 	 there is a CSS file, but this app is not optimized for the UI
 
 The API and this application assumes a database has already been set up and has tables, and that there is an Admin user in the Database (not the root user) for applications to access data.    The (web) program "I_sqlTables.php" creates the tables and admin user.
