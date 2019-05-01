@@ -1,0 +1,60 @@
+This simple API  (no classes) is primarily concerned with maniplution of database information
+Note there are no delete functions implemewnted
+
+The Following lines MUST be included in the calling program:
+	require_once 'include/DeploymentDB.php' 
+	/// Establish a DB Connection.   This assumes that the MYSQL daemeon is running.
+	/// Passed parmaters:  Show DEBUG information = 'true' or 'false'
+	intializeConnection('false') ;
+	/// Selects the correct database to use for this code.
+	/// Passed parmaters:  Show DEBUG information = 'true' or 'false'
+	selectDatabase('false');
+
+==================================
+
+All parameters for the folllwing functions are STRING type
+
+API DEFINITIONS:
+
+adduser($USER,$PASSWORD)  /* Create User */
+This will fail if the user already exists
+Returns 1 on success
+Returns 0 on failure
+
+lookupuser($USER,$PASSWORD)    /*Authtenicate*/
+This makes ure that the user is in the database and has the same password
+Returns 1 on success
+Returns 0 on failure
+
+showusers($utype) /* Show uses with a particular type */
+For this project, only ALL is implenemted fot the utype
+Returns an HTML table of all the users if type utype in the database
+
+authorizeuser($USER) /* Authorizes a user */
+No database success error checking is done in this version
+$USER must be `a user name that exists in the database
+
+deauthorizeuser($USER) /* Un-Authorizes a user */
+No database success error checking is done in this version
+$USER must be `a user name that exists in the database
+
+userauthstate($state)  /* Selects users in a prticular authorization state */
+Returns an array of users in an autorinzed $state ( $state can be "Yes" or "No")
+
+allusers() /* Gets all users names in the database */
+Returns an array of user names
+
+getuserroles($USER) /* Gets the roles of a particular user */
+Returns the $USER current roles
+
+getallroles($val) /* get the master role list */
+Returns all the valid roles ($val must be one ath this time)
+
+updateroles($USER,$ROLES) /* Updates the roles of a particular user */
+No database success error checking is done in this version
+$USER must be `a user name that exists in the database
+
+addnewrole($ID,$newrole) /* adds a noew riolew to the master role list */
+No database success error checking is done in this version
+$ID must be "1" in this version
+

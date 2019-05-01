@@ -1,0 +1,150 @@
+<style>
+#wgtmsr{
+ width:150px;   
+}
+body {
+    margin: 15px 20px 20px 50px;
+    font-family: helvetica;
+    font-size: 14px;
+}
+.select-style {
+    border: 1px solid #ccc;
+    width: 145px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 90% 50%;
+}
+.select-style select {
+    padding: 5px 8px;
+    width: 120%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-style select:focus {
+    outline: none;
+}
+input[type=button],  input[type=submit] ,input.buttonA[type=button],  input.buttonA[type=submit] {
+    border: 1px solid #f44c0e;
+    color: #fff;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background: blue;
+    padding: 9px 20px;
+    border-radius: 12px;
+}
+input[type=button]:hover,  input[type=submit]:hover {
+    background: #f44c0e;
+}
+input.buttonA[type=button],  input.buttonA[type=submit] {
+	width: 100%;
+}
+input [type=checkbox], input[type=radio] {
+
+    vertical-align: middle;
+    position: relative;
+    bottom: 3px;
+}
+input.na {
+	margin-top:2px;
+	margin-bottom:1px;
+	height: 18px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 0px;
+}
+input.nb {
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+}
+ul.a 
+{
+        padding-left: 10px;
+}`
+th.red {
+	background-color:red;
+	color:white;
+}
+th.blue {
+	background-color:blue;
+	color:white;
+}
+td.small {
+	font-size: 10px;
+}
+hr.minus {
+	margin-top: -20px;
+	margin-bottom: 0px;
+}
+hr.minusA {
+	margin-top: -12px;
+	margin-bottom: 0px;
+}
+hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+td.head {
+	font-family: helvetica;
+	font-size: 22px;
+	font-weight: bold;
+}
+p.head {
+	font-family: helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	padding:10px;
+}
+p.headA {
+	font-family: helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	padding:0px;
+}
+p.label {
+	font-family: helvetica;
+	font-size: 18px;
+	padding:10px;
+}
+td.sb {
+	border-right:1px solid #ddd;
+}
+td.align {
+	text-align: center;
+	vertical-align: middle;
+	
+}
+td.aligntop {
+	text-align: top;
+	vertical-align: top;	
+}
+
+td.lb {
+   border: 1px solid black;
+   border-collapse: collapse;padding: 2px 40px 2px ;
+} 
+
+table.li , th.li , td.li {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 2px 40px 2px ;
+} 
+table.offset {
+	margin-left: 25px;
+	font-size: 8px;
+}
+table.offsetA {
+	margin-left: 25px;
+	font-size: 12px;
+}
+table.existing {
+	margin-top: -10px ;
+	margin-left: 25px;
+	font-size: 12px;
+}
+<
+</style>
