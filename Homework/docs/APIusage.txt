@@ -1,5 +1,5 @@
 This simple API  (no classes) is primarily concerned with maniplution of database information
-Note there are no delete functions implemewnted
+Note there are no delete functions implemented
 
 The Following lines MUST be included in the calling program:
 	require_once 'include/DeploymentDB.php' 
@@ -38,7 +38,7 @@ deauthorizeuser($USER) /* Un-Authorizes a user */
 No database success error checking is done in this version
 $USER must be `a user name that exists in the database
 
-userauthstate($state)  /* Selects users in a prticular authorization state */
+userauthstate($state)  /* Selects users in a particular authorization state */
 Returns an array of users in an autorinzed $state ( $state can be "Yes" or "No")
 
 allusers() /* Gets all users names in the database */
